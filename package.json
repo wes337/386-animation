@@ -1,0 +1,9 @@
+{
+  "name": "386-animation",
+  "version": "1.0.0",
+  "description": "Page screen loading animation inspired from the DOS 386 terminal.",
+  "main": "src/index.js",
+  "author": "Wesley Moses, Chris McKenzie",
+  "license": "MIT",
+  "private": false
+}
