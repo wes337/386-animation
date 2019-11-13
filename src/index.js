@@ -1,16 +1,14 @@
-window._386 = window._386 || {};
-
-export function init386() {
+export default function init386(options = {}) {
   var character = { height: 20, width: 12.4 };
   const loading = () => {
-    if (window._386.fastLoad) {
+    if (options.fastLoad) {
       document.body.style.visibility = 'visible';
       return;
     }
 
     var
-      onePass = window._386.onePass,
-      speedFactor = 1 / (window._386.speedFactor || 1) * 165000,
+      onePass = options.onePass,
+      speedFactor = 1 / (options.speedFactor || 1) * 165000,
       wrap = document.createElement('div'),
       bar = wrap.appendChild(document.createElement('div')),
 
@@ -31,6 +29,16 @@ export function init386() {
     wrap.id = 'wrap386';
     bar.id = 'bar386';
     cursor.id = 'cursor386';
+
+    if (options.background) {
+      wrap.style.background = options.background
+      bar.style.background = options.background
+    }
+
+    if (options.cursorColor) {
+      bar.style.color = options.cursorColor
+      cursor.style.color = options.cursorColor
+    }
 
     cursor.innerHTML = bar.innerHTML = '&#9604;';
 
