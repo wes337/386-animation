@@ -1,6 +1,6 @@
 {
   "name": "386-animation",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Page screen loading animation inspired from the DOS 386 terminal.",
   "main": "index.js",
   "repository": {
