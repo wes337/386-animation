@@ -1,8 +1,16 @@
 # DOS/386 Loading Animation
 
+![Demo](https://github.com/wes337/386-animation/blob/master/386.gif?raw=true "Demo")
+
 Based off of [BOOTSTRA.386](https://github.com/kristopolous/BOOTSTRA.386), a Bootstrap theme by [Chris McKenzie](https://github.com/kristopolous). I thought that the screen loading animation was cool and wanted to make a seperate lightweight version.
 
 ## Getting Started
+
+Install using your package manager.
+```
+yarn add 386-animation
+npm install 386-animation
+```
 
 Import the package and styles into wherever your code creates HTML and run the `init386()` function.
 
@@ -22,6 +30,8 @@ Then initialize it!
 init386();
 ```
 
+### Configuration
+
 The function also takes an object of options as a parameter.
 ```javascript
 // Default options
@@ -32,19 +42,6 @@ init386({
   cursorColor: '#FAFAFA' // The colour of the terminal cursor/bar.
 });
 ```
-
-### Installing
-
-Simply add this package to your project using your package manager.
-
-```
-yarn add 386-animation
-npm install 386-animation
-```
-
-## Built With
-
-Pure vanilla JS!
 
 ## Authors
 
