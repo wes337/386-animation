@@ -1,5 +1,6 @@
 export default function init386(options = {}) {
-  var character = { height: 20, width: 12.4 };
+  var character = { height: 16, width: 8 };
+
   function loading() {
     if (options.fastLoad) {
       document.body.style.visibility = "visible";
@@ -48,6 +49,7 @@ export default function init386(options = {}) {
       document.body.style.visibility = "visible";
     } else {
       document.body.appendChild(cursor);
+      cursor.innerHTML = "";
       rounds /= 2;
       character.height *= 4;
     }
@@ -64,7 +66,7 @@ export default function init386(options = {}) {
           pass++;
           row = height - character.height;
 
-          if (pass == 2) {
+          if (pass === 2) {
             document.body.removeChild(cursor);
             clearInterval(ival);
           } else {

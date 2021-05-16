@@ -41,11 +41,11 @@ The function also takes an object of options as a parameter.
 ```javascript
 // Default options
 init386({
-  onePass: false // will skip the second pass of the cursor if true
-  fastLoad: false // will skip the animation.
-  speedFactor: 1 // the speed of the loading animation.
-  background: '#000084' // CSS value for the body background before loading animation has completed
-  cursorColor: '#FAFAFA' // The colour of the terminal cursor/bar.
+  onePass: false, // will skip the second pass of the cursor if true
+  fastLoad: false, // will skip the animation.
+  speedFactor: 1, // the speed of the loading animation.
+  background: "#000084", // CSS value for the body background before loading animation has completed
+  cursorColor: "#FAFAFA", // The colour of the terminal cursor/bar.
 });
 ```
 
