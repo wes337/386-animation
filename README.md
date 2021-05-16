@@ -1,6 +1,6 @@
 # DOS/386 Loading Animation
 
-![Demo](https://github.com/wes337/386-animation/blob/master/386.gif?raw=true "Demo")
+![Demo](https://i.imgur.com/u8EcsBt.gif "Demo")
 
 Based off of [BOOTSTRA.386](https://github.com/kristopolous/BOOTSTRA.386), a Bootstrap theme by [Chris McKenzie](https://github.com/kristopolous). I thought that the screen loading animation was cool and wanted to make a seperate lightweight version.
 
