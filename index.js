@@ -1,4 +1,4 @@
-exports.init386 = function (options = {}) {
+export default function init386(options = {}) {
   var character = { height: 20, width: 12.4 };
   function loading() {
     if (options.fastLoad) {
@@ -91,4 +91,4 @@ exports.init386 = function (options = {}) {
   }
 
   loading();
-};
+}
